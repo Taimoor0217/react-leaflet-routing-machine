@@ -1,0 +1,46 @@
+{
+  "name": "react-npm-template",
+  "version": "1.0.0",
+  "description": "dev and deploy template for publishing react components to npm",
+  "main": "./dist/bundle.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --config webpack.dev.js --open --hot",
+    "build": "webpack --mode production --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Taimoor0217/react-npm-template.git"
+  },
+  "keywords": [
+    "react-npm-template",
+    "npm-template"
+  ],
+  "author": "Taimoor Ali",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Taimoor0217/react-npm-template/issues"
+  },
+  "homepage": "https://github.com/Taimoor0217/react-npm-template#readme",
+  "dependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.8.0",
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "directories": {
+    "test": "test"
+  }
+}
