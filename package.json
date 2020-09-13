@@ -1,7 +1,7 @@
 {
-  "name": "react-npm-template",
+  "name": "react-leaflet-routing-machine",
   "version": "1.0.0",
-  "description": "dev and deploy template for publishing react components to npm",
+  "description": " routing component from react-leaflet ",
   "main": "./dist/bundle.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --config webpack.dev.js --open --hot",
@@ -9,18 +9,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Taimoor0217/react-npm-template.git"
+    "url": "git+https://github.com/Taimoor0217/react-leaflet-routing-machine.git"
   },
   "keywords": [
-    "react-npm-template",
-    "npm-template"
+    "react-leaflet-routing",
+    "leaflet-routing-machine",
+    "react-leaflet-routing-machine",
+    "leafletjs"
   ],
   "author": "Taimoor Ali",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Taimoor0217/react-npm-template/issues"
+    "url": "https://github.com/Taimoor0217/react-leaflet-routing-machine/issues"
   },
-  "homepage": "https://github.com/Taimoor0217/react-npm-template#readme",
+  "homepage": "https://github.com/Taimoor0217/react-leaflet-routing-machine#readme",
   "dependencies": {
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
