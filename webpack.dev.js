@@ -32,6 +32,6 @@ module.exports = {
     plugins :[
         new HTMLWebpackPlugin({
             template : path.join(__dirname, "dev/index.html")
-        })
+        }),
     ],
 }

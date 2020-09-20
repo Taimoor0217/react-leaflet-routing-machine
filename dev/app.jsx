@@ -1,5 +1,5 @@
 import React , {useState} from 'react';
-//import Routing from "../src/reactLeafletRoutingMachine.jsx";
+import Routing from "../src/reactLeafletRoutingMachine.jsx";
 import { Map, Marker, Popup, TileLayer } from "react-leaflet";
 import L from "leaflet";
 export default function MapView(){
@@ -28,16 +28,26 @@ export default function MapView(){
                 url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
                 attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                 />
-            { dataPoints.map((data , index)=>{
-                console.log(data)
-                return(
-                <Marker key={index} position={data}>
-                <Popup>
-                    Sample Popup
-                </Popup>
-                </Marker>  
-            )
-            })}
+                { dataPoints.map((data , index)=>{
+                    return(
+                    <Marker key={index} position={data}>
+                    <Popup>
+                        Sample Popup
+                    </Popup>
+                    </Marker>  
+                )
+                })}
+
+                {/* <Routing 
+                    map={refMap} 
+                    show={true} 
+                    waypoints={[dataPoints[0] , dataPoints[4]]}
+                    lineStyles={{
+                        color: 'pink',
+                        opacity: 1,
+                        weight: 5
+                    }} 
+                /> */}
             </Map>
         </div>
     )
