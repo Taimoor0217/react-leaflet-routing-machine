@@ -16,13 +16,21 @@ export default function MapView(){
         [ 45.408488357092367,-75.703622500360268],
         [ 45.314086718258636,-75.609516309730921]
     ]
-    const position = [51.505, -0.09]
+    const [wayPoints , setWayPoints] = useState([dataPoints[0] , dataPoints[4]])
     let [refMap , setRefMap] = useState(null);
     const saveMap = (map)=>{
         setRefMap(map)
     }
     return(
         <div className="mapHolder">
+            <button onClick ={()=>{
+                setWayPoints([
+                    dataPoints[Math.floor(Math.random()*5)],
+                    dataPoints[Math.floor(Math.random()*5)],
+                ])
+            }}>
+                Change
+            </button>
             <Map center={[45.4, -75.7]} zoom={11} ref={saveMap}>
                 <TileLayer
                 url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
@@ -38,16 +46,16 @@ export default function MapView(){
                 )
                 })}
 
-                {/* <Routing 
+                <Routing 
                     map={refMap} 
                     show={true} 
-                    waypoints={[dataPoints[0] , dataPoints[4]]}
+                    waypoints={wayPoints}
                     lineStyles={{
-                        color: 'pink',
+                        color: 'red',
                         opacity: 1,
                         weight: 5
                     }} 
-                /> */}
+                />
             </Map>
         </div>
     )
