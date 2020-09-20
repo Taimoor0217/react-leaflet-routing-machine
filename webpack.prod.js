@@ -1,7 +1,7 @@
 const path = require('path')
 module.exports = {
     entry: {
-        main: path.join(__dirname, "src/Sample.jsx") //for non static user wtitten code
+        main: path.join(__dirname, "src/reactLeafletRoutingMachine.jsx") //for non static user wtitten code
     },
     output: {
         filename: "bundle.js",
