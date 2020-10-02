@@ -22,11 +22,36 @@ module.exports = {
                 use : {
                     loader : "babel-loader"
                 }
+<<<<<<< HEAD
+            },{
+                test: /\.s[ac]ss$/i,
+                use: [{
+                    loader: 'style-loader', // inject CSS to page
+                  }, {
+                    loader: 'css-loader', // translates CSS into CommonJS modules
+                  }, {
+                    loader: 'postcss-loader', // Run post css actions
+                    options: {
+                        postcssOptions:{
+                            plugins: function () { // post css plugins, can be exported to postcss.config.js
+                                return [
+                                    require('precss'),
+                                    require('autoprefixer')
+                                ];
+                            }
+                        }
+                    }
+                  }, {
+                    loader: 'sass-loader' // compiles Sass to CSS
+                  }]
+            }
+=======
             },
             {
                 test: /\.css$/i,
                 use: ['style-loader', 'css-loader'],
             },
+>>>>>>> ca0d58c588703222bd32c1b6ed43d1fc14036aa7
         ]
     },
     plugins :[
