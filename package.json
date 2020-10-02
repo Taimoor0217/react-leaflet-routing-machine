@@ -40,7 +40,10 @@
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.6",
     "webpack-dev-server": "^3.8.0",
-    "babel-preset-stage-0": "^6.24.1"
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^4.3.0",
+    "sass-loader": "^10.0.2",
+    "style-loader": "^1.2.1"
   },
   "directories": {
     "test": "test"
