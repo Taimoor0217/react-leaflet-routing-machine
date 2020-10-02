@@ -1,7 +1,7 @@
 const path = require('path')
 module.exports = {
     entry: {
-        main: path.join(__dirname, "src/Sample.jsx") //for non static user wtitten code
+        main: path.join(__dirname, "src/reactLeafletRoutingMachine.jsx") //for non static user wtitten code
     },
     output: {
         filename: "bundle.js",
@@ -18,6 +18,7 @@ module.exports = {
                 }
             },
             {
+<<<<<<< HEAD
                 test: /\.s[ac]ss$/i,
                 use: [{
                     loader: 'style-loader', // inject CSS to page
@@ -39,6 +40,11 @@ module.exports = {
                     loader: 'sass-loader' // compiles Sass to CSS
                   }]
             }
+=======
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
+            },
+>>>>>>> ca0d58c588703222bd32c1b6ed43d1fc14036aa7
         ]
     },
 }

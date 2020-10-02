@@ -22,6 +22,7 @@ module.exports = {
                 use : {
                     loader : "babel-loader"
                 }
+<<<<<<< HEAD
             },{
                 test: /\.s[ac]ss$/i,
                 use: [{
@@ -44,11 +45,18 @@ module.exports = {
                     loader: 'sass-loader' // compiles Sass to CSS
                   }]
             }
+=======
+            },
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
+            },
+>>>>>>> ca0d58c588703222bd32c1b6ed43d1fc14036aa7
         ]
     },
     plugins :[
         new HTMLWebpackPlugin({
             template : path.join(__dirname, "dev/index.html")
-        })
+        }),
     ],
 }
